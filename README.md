@@ -52,16 +52,23 @@ The **Omnira Airline Reservation and Ticketing System** is a centralized, secure
 
 The system is built around six core functional modules:
 
-​```
-┌─────────────────────────────────────────────────────────┐
-│              Airline Reservation & Ticketing System      │
-├──────────────────┬──────────────────┬────────────────────┤
-│  Flight Search   │ Booking / PNR    │ Payment Processing │
-│  & Availability  │ Creation         │ (Gateway)          │
-├──────────────────┼──────────────────┼────────────────────┤
-│  E-Ticket        │ Admin / Staff    │ Security & Data    │
-│  Issuance        │ Management       │ Protection         │
-└──────────────────┴──────────────────┴────────────────────┘
+**1. Flight Search & Availability**
+Allows passengers to search for flights by destination, origin, date, and airline, and view real-time seat availability and pricing.
+
+**2. Booking System / PNR Creation**
+Handles flight selection, seat choosing, passenger information collection, and auto-generation of a unique Passenger Name Record (PNR).
+
+**3. Payment Processing**
+Facilitates secure payments via card or e-wallet through an integrated third-party payment gateway, and generates validated receipts upon success.
+
+**4. E-Ticket Issuance**
+Automatically generates and delivers an electronic ticket to the passenger's email upon payment confirmation, with an option to print or download.
+
+**5. Admin / Staff Management**
+Provides a secure portal for airline staff to manage flight schedules, oversee bookings, handle user data, and generate operational reports.
+
+**6. Security & Data Protection**
+Enforces data encryption, role-based access control (RBAC), and secure authentication to protect user credentials and financial information.
 ​```
 
 ### Key Data Entities
