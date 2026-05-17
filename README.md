@@ -149,38 +149,39 @@ npm run migrate   # or equivalent
 npm run dev
 ​```
 
-### Environment Variables
+## Project Structure
 
-​```env
-DB_HOST=localhost
-DB_NAME=omnira_db
-DB_USER=your_db_user
-DB_PASS=your_db_password
+The repository is organized as follows:
 
-PAYMENT_GATEWAY_KEY=your_gateway_key
-MAIL_HOST=smtp.example.com
-MAIL_PORT=587
-MAIL_USER=your_email
-MAIL_PASS=your_email_password
-​```
+- **src/frontend/** — UI components and pages
+- **src/backend/** — Server-side logic and APIs
+- **src/database/** — Migrations and seed data
+- **src/config/** — App and environment configuration
+- **docs/** — SRS, SDD, and other documentation
+- **tests/** — Unit and integration tests
+- **.env.example** — Environment variable template
+- **README.md** — Project documentation
 
 ---
 
-## Project Structure
+## Environment Variables
 
-​```
-omnira-airlines/
-├── src/
-│   ├── frontend/         # UI components and pages
-│   ├── backend/          # Server-side logic and APIs
-│   ├── database/         # Migrations and seed data
-│   └── config/           # App and environment configuration
-├── docs/                 # SRS, SDD, and other documentation
-├── tests/                # Unit and integration tests
-├── .env.example
-├── README.md
-└── ...
-​```
+Before running the project, copy `.env.example` to `.env` and fill in the following values:
+
+**Database**
+- `DB_HOST` — Hostname of your database server (e.g., `localhost`)
+- `DB_NAME` — Name of the database (e.g., `omnira_db`)
+- `DB_USER` — Database username
+- `DB_PASS` — Database password
+
+**Payment Gateway**
+- `PAYMENT_GATEWAY_KEY` — API key from your payment provider (e.g., PayMongo or Stripe)
+
+**Mail / Notifications**
+- `MAIL_HOST` — SMTP server host (e.g., `smtp.example.com`)
+- `MAIL_PORT` — SMTP port (e.g., `587`)
+- `MAIL_USER` — Email address used for sending notifications
+- `MAIL_PASS` — Password for the mail account
 
 ---
 
